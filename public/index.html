@@ -7,9 +7,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Poppy Store</title>
+    <title>Pet Store</title>
 </head>
-<body>
-    
+<body class="font-poppins-r">
+    <nav class="w-full h-16 px-5 lg:px-16 bg-p-orange flex justify-center lg:justify-between">
+        <div class="flex items-center gap-2">
+            <img class="w-10" src="../public/img/icon.png" alt="Icon Pet">
+            <p class="font-semibold">PetStore</p>
+        </div>
+        <div class="hidden lg:flex items-center">
+            <ul class="flex flex-row gap-8">
+                <li><a class="font-semibold hover:text-s-orange" href="#">Inicio</a></li>
+                <li><a class="font-semibold hover:text-s-orange" href="#">Razas</a></li>
+                <li><a class="font-semibold hover:text-s-orange" href="#">Accesorios</a></li>
+                <li><a class="font-semibold hover:text-s-orange" href="#">Blog</a></li>
+                <li><a class="font-semibold hover:text-s-orange" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio">
+        <div class="w-full h-auto lg:fixed p-5 lg:px-36 bg-p-orange flex flex-col lg:flex-row gap-4">
+            <div class="flex items-center justify-center lg:w-1/2">
+                <div class="w-56 h-56 lg:w-80 lg:h-80 bg-gradient-to-b from-p-orange to-s-orange rounded-full">
+                    <img class="w-60 lg:w-80" src="../public/img/img-cover.png" alt="Pet image">
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex flex-col lg:items-start items-center justify-center gap-4">
+                <p class="font-bold text-md lg:text-3xl">Todos Necesitamos un Amigo en la vida.</p>
+                <p class="hidden lg:flex">La vida es mejor con una mascota. Ellos nos enseñan el verdadero significado de la amistad y el amor incondicional. ¿Listo para encontrar a tu mejor amigo?</p>
+                <button class="py-2 px-3 bg-s-orange rounded-xl text-white hover:text-black">Ver Mascotas</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/b74d161dd8.js" crossorigin="anonymous"></script>
 </body>
 </html>
